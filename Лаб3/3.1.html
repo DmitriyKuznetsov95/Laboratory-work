@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+var calculator = 
+{
+	sum: function()
+	{
+		return this.a + this.b;
+	},
+	mul: function()
+	{
+		return this.a * this.b;
+	},
+	read: function()
+	{
+		this.a = +prompt('a?', '');
+		this.b = +prompt('b?', '');
+	}
+}
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
+</script>
+</body>
+</html>
